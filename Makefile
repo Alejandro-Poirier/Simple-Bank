@@ -7,10 +7,10 @@ createdb:
 dropdb:
 	docker exec -it postgres12 dropdb simple_bank
 
-migrateup:
+migrate-up:
 	migrate -path db/migration -database "postgresql://root:alejandropoirier@localhost:5432/simple_bank?sslmode=disable" -verbose up
 
-migratedown:
+migrate-down:
 	migrate -path db/migration -database "postgresql://root:alejandropoirier@localhost:5432/simple_bank?sslmode=disable" -verbose down
 
 sqlc:
