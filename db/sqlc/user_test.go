@@ -5,9 +5,10 @@ import (
 	"testing"
 	"time"
 
+	"simple-bank/util"
+
 	"github.com/jackc/pgx/v5/pgtype"
 	"github.com/stretchr/testify/require"
-	"github.com/techschool/simplebank/util"
 )
 
 func createRandomUser(t *testing.T) User {
